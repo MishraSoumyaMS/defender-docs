@@ -48,6 +48,7 @@ When admins or users submit messages to Microsoft for analysis, we do the follow
 
 > [!IMPORTANT]
 > In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), admins can submit email messages to Microsoft for analysis, but the messages are analyzed for email authentication and policy hits only. Payload reputation, detonation, and grader analysis aren't done for compliance reasons (data isn't allowed to leave the organization boundary).
+>
 
 Watch this short video to learn how to use admin submissions in Microsoft Defender for Office 365 to submit messages to Microsoft for evaluation.
 
@@ -79,8 +80,7 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
 
 ## Admin-originated submissions
 
-> [!TIP]
-> The tab where you select select :::image type="icon" source="media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis** doesn't particularly matter, as long as you set **Select the submission type** to the correct value.
+
 
 ### Report questionable email to Microsoft
 
@@ -113,6 +113,8 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
        Select **Next**.
 
        :::image type="content" source="media/admin-submission-email-block.png" alt-text="Submit a false negative (bad) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="media/admin-submission-email-block.png":::
+ > [!NOTE]
+> The tab where you select select :::image type="icon" source="media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis** doesn't particularly matter, as long as you set **Select the submission type** to the correct value.
 
 5. On the second page of the **Submit to Microsoft for analysis** flyout that opens, do one of the following steps:
    - Select **Submit**.
@@ -139,6 +141,9 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
 6. Select **Done**.
 
 After a few moments, the block entry is available on the **Domains & addresses** tab on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=Sender>.
+
+> [!NOTE]
+> Admin submissions for on-premises mailboxes are only supported for messages that are less than 7 days old. Additionally, uploading email files for admin submissions is not currently supported for on-premises mailboxes.
 
 ### Report questionable email attachments to Microsoft
 
